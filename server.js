@@ -1,4 +1,4 @@
-const app = require("./app");
+const app = require("./index");
 const connectToMongo = require("./config/db"); //function that upon calling will connect to our DB.
 const dotenv = require("dotenv"); // for setting up enviroment variables
 
