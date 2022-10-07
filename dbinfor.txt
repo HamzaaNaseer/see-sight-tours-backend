@@ -1,0 +1,3 @@
+hamza t9dbVXbUY2EH6hp8
+
+mongodb+srv://hamza:t9dbVXbUY2EH6hp8@cluster0.rwvbdxm.mongodb.net/?retryWrites=true&w=majority
