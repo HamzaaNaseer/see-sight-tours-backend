@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const uri = "mongodb+srv://hamza:t9dbVXbUY2EH6hp8@cluster0.rwvbdxm.mongodb.net/?retryWrites=true&w=majority"
+const uri = 'mongodb://mongo:bksBdxjsThIRHLkH7UqK@containers-us-west-44.railway.app:5986'
 //This function will be called to connect to our database
 const connectToMongo = () => {
-  mongoose.connect("mongodb+srv://hamza:t9dbVXbUY2EH6hp8@cluster0.rwvbdxm.mongodb.net/?retryWrites=true&w=majority", () => {
+  mongoose.connect(uri, () => {
     console.log("connected to mongoose sucessfully");
   });
 };
