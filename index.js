@@ -7,6 +7,7 @@ const Todo = require("./models/Todo");
 app.use(express.json());
 app.use(cors());
 const createTodo = async (req, res) => {
+  console.log("inside create")
   try {
     const { title, description } = req.body;
     const todo = await Todo.create({ title, description });
