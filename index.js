@@ -34,6 +34,9 @@ const getAllTodos = async (req, res) => {
   }
 };
 
+
+app.use("/",getAllTodos)
+
 app.get("/getAllTodos", getAllTodos);
 app.post("/insertTodo", createTodo);
 
