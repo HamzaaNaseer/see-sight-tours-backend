@@ -20,6 +20,7 @@ const createTodo = async (req, res) => {
 };
 
 const getAllTodos = async (req, res) => {
+
   try {
     const todos = await Todo.find();
     return res.json({
@@ -35,7 +36,7 @@ const getAllTodos = async (req, res) => {
 };
 
 
-app.use("/",getAllTodos)
+app.get("/",getAllTodos)
 
 app.get("/getAllTodos", getAllTodos);
 app.post("/insertTodo", createTodo);
