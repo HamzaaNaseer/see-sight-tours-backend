@@ -9,5 +9,5 @@ connectToMongo();
 const port = process.env.PORT || 3000;
 //creating a server
 app.listen(process.env.PORT, () => {
-  console.log("server is running at port ", process.env.port);
+  console.log("server is running at port ", process.env.PORT);
 });
